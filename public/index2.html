@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SimpleRunningLog</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="js/index.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="icon" type="image/png" href="images/runningmanPNG.png">
+    </head>
+    <body id="thisBody">
+        <div class="container-flex"> 
+        <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8" id="content">
+            <h1 id="myTitle" onclick="window.location.href='index.html'">Simple Running Log</h1>
+            <h2 id="myexercise">My Exercise</h2>
+        <div class = "myForm">
+            <form id="submitForm">
+                <div>
+                    <label id="formLabel" for="title">Title:</label>
+                    <input type="text" name="title" id="runTitle" placeholder="Name Your Workout">
+                    <span id="titleError" class="hiddenErr">Workout must have a title.</span>
+                </div>
+                <div>
+                    <label id="formLabel" for="date">Date:</label>
+                    <input type="text" name="date" id="date">
+                    <span id="dateError" class="hiddenErr">Date must be in correct format.</span>
+                </div>
+                <div>
+                    <label id="formLabel" for="type">Type:</label>
+                    <select id="type" name="type">
+                        <option disabled selected hidden>Choose...</option>
+                        <option>Run</option>
+                        <option>Bike</option>
+                        <option>Swim</option>
+                        <option>Walk</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label id="formLabel" for="duration">Duration:</label>
+                    <input type="text" name="duration" id="duration" placeholder="00:00:00">
+                    <span id="durationError" class="hiddenErr" >Must have a valid time.</span>
+                </div>
+                <div>
+                    <label id="formLabel" for="weather">Weather:</label>
+                    <input type="text" name="weather" id="weather" placeholder="Sunny and 75">
+                </div>
+                <div>
+                    <label id="formLabel" for="comments">Comments:</label>
+                    <textarea type="text" name="comments" id="comments" placeholder="Write something about your activity..." cols="20" rows="4"></textarea>
+                </div>
+                <div>
+                    <button id="log2" type="submit">Log Exercise</button>
+                </div>
+            </form>
+        </div>
+        <div class="alert alert-danger collapse" role="alert" id="noAlert">
+            <strong>Exercise not logged!</strong> Check form for errors.
+        </div>
+        <div class = "myPicture">
+            <img alt="Exercise pictures" src="images/runningPNG.png" width=25% height=25%>
+        </div>
+        <footer id="myFooter">
+            <p>&copy; Copyright by Brendan Bena</p>
+        </footer>
+        </div>
+        <div class='col-sm-2'></div>
+        </div>
+        </div>
+    </body>
+</html>

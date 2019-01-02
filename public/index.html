@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SimpleRunningLog</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/index.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="icon" type="image/png" href="images/runningmanPNG.png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    </head>
+    <body id="thisBody">
+        <div class='container'>
+        <div class = "row">
+        <div class = "col-sm-2"></div>
+        <div class = "col-sm-8" id="content">
+        <h1 id="myTitle" onclick="window.location.href='index.html'">Simple Running Log</h1>
+        <div class="log_button">
+            <button id="log1" onclick="window.location.href='index2.html'">Log My Exercise!</button>
+        </div>
+        <p class="run">My Runs:</p>
+        <div class="myList">
+            <ul id="last_runs">
+                
+<!--    exercise data from database is appended as li here           -->
+                
+            </ul>
+        </div>
+        <div class="myPicture">
+            <img alt="Triathlon picture" src="images/triathlonPNG.png" width=50% height=25%>
+        </div>
+        <footer id="myFooter">
+            <p>&copy; Copyright by Brendan Bena</p>
+        </footer>
+        </div>
+        <div class = "col-sm-2"></div>
+        </div>
+        </div>
+    </body>
+</html>

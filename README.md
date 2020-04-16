@@ -1,5 +1,5 @@
-# Web and Mobile Semester Project
-Web and Mobile semester project created by BrendanBena.
+# Simple Running Log
+Web and Mobile semester project created by BrendanBena. This application uses a mongoDB database and a html/css/javascript front end to allow a user to log their runs and keep track of workout progress.
 
 ## About
 This website allows the user to log an exercise of their choice.
